@@ -17,7 +17,7 @@ export default class Server {
     this.port = SERVER_PORT;
 
     this.httpServer = http.createServer(this.app);
-    this.io = new socketIO.Server(this.httpServer);
+    this.io = new socketIO.Server(this.httpServer, { cors: { origin: true, credentials: true } });
 
     this.escucharSockets();
   }
