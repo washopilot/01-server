@@ -1,6 +1,6 @@
-import Server from './classes/server';
-import { SERVER_PORT } from './global/enviroment';
-import { router } from './routes/router';
+import Server from './src/classes/server';
+import { SERVER_PORT } from './src/global/enviroment';
+import { router } from './src/routes/router';
 import cors from 'cors';
 
 import bodyParser from 'body-parser';
